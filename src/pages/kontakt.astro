@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Kontakt">
+  <section class="hero">
+    <div class="container">
+      <h1>Kontakt os</h1>
+      <p>Har du en opgave, du vil have et uforpligtende tilbud på? Skriv til os, eller send os en besked via formularen herunder.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-box">
+        <p style="margin-bottom:1rem"><a href="mailto:info@dronefotoaarhus.dk" style="color:var(--sky);font-weight:700">info@dronefotoaarhus.dk</a> · Aarhus C</p>
+
+        <h2 style="text-align:center;margin-bottom:0">Send os en besked</h2>
+        <form class="contact-form" method="post" action="https://formsubmit.co/info@dronefotoaarhus.dk">
+          <input type="hidden" name="_subject" value="Ny forespørgsel fra dronefotoaarhus.dk" />
+          <input type="hidden" name="_next" value="https://dronefotoaarhus.dk/tak" />
+          <input type="text" name="_honey" style="display:none" />
+          <label>
+            Navn
+            <input type="text" name="navn" required placeholder="Dit navn" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="Din email" />
+          </label>
+          <label>
+            Telefon
+            <input type="tel" name="telefon" placeholder="Dit telefonnummer" />
+          </label>
+          <label>
+            Hvilken ydelse drejer det sig om?
+            <select name="ydelse">
+              <option value="Dronefotografi">Dronefotografi</option>
+              <option value="Dronevideo">Dronevideo</option>
+              <option value="Droneinspektion">Droneinspektion</option>
+              <option value="Inspektion af landbrug">Inspektion af landbrug</option>
+              <option value="Andet">Andet</option>
+            </select>
+          </label>
+          <label>
+            Besked
+            <textarea name="besked" rows="5" placeholder="Beskriv din opgave her..."></textarea>
+          </label>
+          <button type="submit" class="btn" style="width:100%">Send besked</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+const images = [
+  '2DEDFEFD42F0AEBF385C1C038DEC7F82','4A4E93C90551606B8E491E8403324AE0','4DEF2ACE8E0F8A246659BC2353D19B7B',
+  '4E1A1F60964392CD75DA7A356CA344CF','5C24D90471CDA658C71394D01B0FF25A','6CC77A9013C7CD572A92306AC1B77D2C',
+  '6DBB51E4FDD54CFA12C86A8BC760F66C','6F64A9154875403201A4F6F57C5076B4','9BE0B8ADEE21E55E9852C4178CFB9101',
+  '0024B5434A90FC069D96BB6BED7E4DFE','45BB59B6BC107C3716EBAF7A069FB00A','46F32EAF3A028683D4E2E1ACE8DFC516',
+  '48A461ACFCA92ED13356322B941F385E','53CCD619477F0F503FA7ABBFF2BEEC43','212D1A8A945268558E6279D099215219',
+  '354B7EC9C05AA712C26261CEAC5AF492','369ABE0B91BB15A4793F7CC92FED9512','740B0B55F17FFE8E690BF5EA60292A2A',
+];
+---
+
+<Layout title="Galleri">
+  <section class="hero">
+    <div class="container">
+      <h1>Se vores arbejde</h1>
+      <p>Eksempler på vores droneoptagelser og dronefotos fra hele Østjylland.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery">
+        {images.map(img => (
+          <img src={`/img/galleri/${img}.jpg`} alt="Dronefoto fra Dronefoto Aarhus" loading="lazy" />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
