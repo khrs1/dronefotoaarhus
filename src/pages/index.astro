@@ -3,64 +3,77 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Dronefoto, dronevideo og droneinspektion i Aarhus">
-  <section class="hero">
+  <!-- Service cards hero -->
+  <section class="hero-cards">
     <div class="container">
-      <h1>Skarp dronefoto og dronevideo i hele Østjylland</h1>
-      <p>Dronefoto Aarhus er din lokale samarbejdspartner inden for dronefotografering og inspektionsydelser. Vi bruger kun certificerede dronepiloter og dækker store dele af Østjylland. Vi kan rykke ud inden for 1-3 dage.</p>
-      <a href="/kontakt" class="btn">Få et uforpligtende tilbud</a>
-      <a href="/ydelser" class="btn btn-outline">Se vores ydelser</a>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2>Vores ydelser</h2>
-      <p class="lead">Uanset om det er ejendomsfoto, byggepladsovervågning eller en helt anden opgave – så står vi klar.</p>
-      <div class="services">
-        <div class="service">
-          <h3>Dronefotografi</h3>
-          <p>Luftbilleder fra særlige begivenheder, ejendomme til salgsmateriale og løbende dokumentation af byggeprojekter.</p>
-          <a href="/ydelser/dronefotografi">Læs om dronefoto →</a>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <h3>Dronefoto</h3>
+          <p>Læs mere om hvilke ydelser vi tilbyder inden for dronefotos i Aarhus og fotografering fra luften.</p>
+          <a href="/ydelser/dronefotografi" class="btn">Læs om dronefoto</a>
         </div>
-        <div class="service">
-          <h3>Dronevideo & dronefilm</h3>
-          <p>Skarpe optagelser i 4K, der styrker din virksomheds fortælling eller dokumenterer særlige øjeblikke.</p>
-          <a href="/ydelser/dronevideo">Læs om dronevideo →</a>
+        <div class="svc-card">
+          <h3>Inspektion</h3>
+          <p>Vi tilbyder inspektion af skorstene, tag, tagrender og andre utilgængelige områder.</p>
+          <a href="/ydelser/droneinspektion" class="btn">Læs om inspektion</a>
         </div>
-        <div class="service">
-          <h3>Droneinspektion</h3>
-          <p>Inspektion af skorstene, tage, tagrender og andre utilgængelige områder i høj detalje.</p>
-          <a href="/ydelser/droneinspektion">Læs om droneinspektion →</a>
-        </div>
-        <div class="service">
-          <h3>Inspektion af landbrug</h3>
-          <p>Overflyvninger af marker for at spotte problemområder og ukrudt fra luften.</p>
-          <a href="/ydelser/inspektion-af-landbrug">Læs om landbrugsinspektion →</a>
+        <div class="svc-card">
+          <h3>Dronevideo</h3>
+          <p>Se vores arbejde og eksempler på vores droneoptagelser. Dronevideo i hele Jylland.</p>
+          <a href="/ydelser/dronevideo" class="btn">Se eksempler</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Intro -->
+  <section class="section">
+    <div class="container">
+      <p class="lead" style="text-align:center;margin:0 auto 2rem;max-width:780px">Dronefoto Aarhus er din lokale samarbejdspartner inden for dronefotografi og inspektionsydelser. Vi bruger kun certificerede dronepiloter og kan hjælpe dig med enhver opgave. Vi dækker store dele af Østjylland og kan rykke ud inden for 1-3 dage.</p>
+      <p style="text-align:center;color:var(--muted);max-width:720px;margin:0 auto">Vi tilbyder både almindelig dronefotografering, videooptagelser og 360 graders video. Udsigten fra luften er altid lidt bedre – kontakt os for luftfotos taget med drone.</p>
+    </div>
+  </section>
+
+  <!-- Quality -->
   <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
     <div class="container">
-      <h2>Kvalitet du kan stole på</h2>
-      <p class="lead">Vi leverer altid dronefotografering i højeste klasse. Det er vigtigt for os, at vores kunder er glade og tilfredse.</p>
+      <div class="center">
+        <h2>Hvilken kvalitet kan vi tilbyde?</h2>
+        <p class="lead">Video og fotos i topklasse, perfekt til de fleste produktioner.</p>
+      </div>
       <div class="quals">
         <div class="qual"><div class="big">4K Ultra HD</div><div class="small">3840×2160 i 30p</div></div>
         <div class="qual"><div class="big">p2.7K</div><div class="small">2720×1530 i 60p</div></div>
         <div class="qual"><div class="big">FHD</div><div class="small">1920×1080 i 120p</div></div>
-        <div class="qual"><div class="big">Certificerede</div><div class="small">Piloter fra Trafikstyrelsen</div></div>
-        <div class="qual"><div class="big">Rykker ud 1-3 dage</div><div class="small">Hele Østjylland</div></div>
+        <div class="qual"><div class="big">HD</div><div class="small">1280×720 i 120p</div></div>
+        <div class="qual"><div class="big">4:3</div><div class="small">4056×3040</div></div>
+        <div class="qual"><div class="big">16:9</div><div class="small">4056×2280</div></div>
       </div>
     </div>
   </section>
 
+  <!-- Trust -->
   <section class="section">
     <div class="container">
-      <h2>Skal vi hjælpe dig med en opgave?</h2>
-      <p class="lead">Send os en besked, så vender vi tilbage hurtigst muligt med et uforpligtende tilbud.</p>
-      <div style="text-align:center;margin-top:1.5rem">
-        <a href="/kontakt" class="btn">Kontakt os i dag</a>
+      <div class="features3">
+        <div class="f3">
+          <h3>Godkendte dronepiloter</h3>
+          <p>Vores dronepiloter er certificerede fra Trafikstyrelsen og sørger selv for de nødvendige tilladelser.</p>
+        </div>
+        <div class="f3">
+          <h3>Fleksible tider</h3>
+          <p>Vi rykker ud både aften og weekend, så visse opgaver kan løses uden for almindelige arbejdstider.</p>
+        </div>
+        <div class="f3">
+          <h3>Kvalitetsoptagelser</h3>
+          <p>Optagelser i meget høj kvalitet – vi forsyner dig med et downloadlink i fuld opløsning.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem">
+        <h2 style="font-size:1.8rem;margin-bottom:1rem">Skal vi hjælpe dig med en opgave?</h2>
+        <p style="color:var(--muted);margin-bottom:1.5rem">Send os en besked, så vender vi tilbage med et uforpligtende tilbud.</p>
+        <a href="/kontakt" class="btn btn-lg">Kontakt os</a>
       </div>
     </div>
   </section>
